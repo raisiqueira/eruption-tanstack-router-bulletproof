@@ -1,0 +1,12 @@
+import { Route } from '@tanstack/react-router'
+
+import { {{ pascalCase featureName}} } from '@/features/{{camelCase featureName}}/routes/{{pascalCase featureName}}'
+import { rootRoute } from '@/routes'
+
+const {{ camelCase featureName }}Route = new Route({
+  getParentRoute: () => rootRoute,
+  path: '{{ dashCase featureName }}',
+  component: {{ pascalCase featureName}},
+})
+
+export { {{ camelCase featureName }}Route }
